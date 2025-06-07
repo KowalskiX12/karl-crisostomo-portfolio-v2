@@ -1,0 +1,18 @@
+@use '@styles/media-queries' as *;
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+.profileSideBarContainer {
+  flex: 1;
+}

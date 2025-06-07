@@ -1,0 +1,9 @@
+@use '@styles/media-queries' as *;
+
+.styledHeaderSection {
+  display: none;
+
+  @include md{
+    display: block;
+  }
+}

@@ -1,0 +1,37 @@
+.container {
+  border: solid 1px red;
+  height:100%;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  .title {
+    font-weight: bolder;
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .description {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+.navigationContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+  margin: 32px 0 32px 0;
+  span {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,30 @@
+$screen-xxl: 1920px;
+$screen-xl: 1536px;
+$screen-lg: 1366px;
+$screen-md: 900px;
+$screen-sm: 600px;
+$screen-xs: 300px;
+
+@mixin mobile {
+  @media screen and (min-width: $screen-xs) and (max-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (min-width: $screen-lg) and (max-width: $screen-xl) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $screen-lg) and (max-width: $screen-xxl) {
+    @content;
+  }
+}
